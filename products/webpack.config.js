@@ -14,6 +14,11 @@ module.exports = {
         "./ProductsIndex": "./src/index"
       },
       shared: ["faker"],
+      // shared: {
+      //   faker: {
+      //     singleton: true, // Разрешена только одна версия общего модуля
+      //   },
+      // },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html"
